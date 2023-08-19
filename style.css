@@ -8,7 +8,9 @@
     box-sizing: border-box;
 }
 
-
+body {
+    background-color: linear-gradient(rgba(134, 22, 87, 0.8), rgba(255, 166, 158, 0.7));
+}
 
 .bx {
     font-size: 1.3rem;
@@ -23,6 +25,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .logo {
@@ -130,12 +133,36 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .about-text {
     margin-left: 180px;
     margin-top: 180px;
+    display: block;
+    text-align: left;
 }
+
+.about-text ul {
+    margin-top: 20px;
+
+}
+
+.about-text ul li {
+    padding: 12px;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.about-text ul li i {
+    color: black;
+}
+
+.about-text ul li span {
+    font-size: 24px;
+    text-align: center;
+}
+
 
 .about-text h2 {
     font-size: 25px;
@@ -149,18 +176,109 @@ b {
 
 }
 
+.info {
+    display: flex;
+}
+
 .about-text .level2 {
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .about-text .level3 {
-    font-size: 18px;
+    font-size: 24;
 }
 
 .container-about img {
     width: 55%;
-    position: absolute;
-    left: 40%;
-    bottom: 35%;
     box-shadow: 20px;
+}
+
+.main-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #4c2660;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-button:hover {
+    background-color: #4c2659;
+}
+
+.container-services {
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-left {
+    width: 35%;
+    display: flex;
+    padding-left: 150px;
+    gap: 60px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.service-left span:nth-child(1) {
+
+    font-size: 30px;
+}
+
+.service-left span:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.service-left img {
+    width: 35vw;
+    margin-left: -40px;
+}
+
+.service-right {
+    margin-top: 60px;
+    width: 50%;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.selected {
+    background: #542262;
+}
+
+.elevated {
+    margin-top: -50px;
+}
+
+.bxs-dashboard {
+    font-size: 72px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
