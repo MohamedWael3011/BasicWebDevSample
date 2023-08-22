@@ -40,6 +40,7 @@
 .nav-links ul {
     justify-content: space-evenly;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 25%;
 
 }
@@ -126,11 +127,14 @@
     left: 0;
 }
 
-.container-about {
+.container {
     min-height: 100vh;
     width: 100%;
     background-color: white;
     background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -188,7 +192,7 @@ b {
     font-size: 24;
 }
 
-.container-about img {
+.container img {
     width: 55%;
     box-shadow: 20px;
 }
@@ -312,7 +316,7 @@ b {
 .container-experience {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(61, 37, 90, 255), rgba(126, 74, 128));
+    background: linear-gradient(rgba(61, 37, 90), rgba(126, 74, 128));
     background-position: center;
     background-size: cover;
     position: relative;
@@ -323,7 +327,6 @@ b {
 
 .exp h2 {
     position: relative;
-    margin-top: 50px;
     margin-right: 60px;
     color: white;
     font-size: 25px;
@@ -380,4 +383,184 @@ b {
     margin-left: 300px;
     margin-right: 200px;
     margin-top: 240px;
+}
+
+.large-box {
+    width: 1000px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 3;
+}
+
+
+
+.contact svg {
+    position: absolute;
+    width: 60%;
+    top: 20px;
+    left: 30%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.text-up {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 50px;
+    color: white;
+}
+
+.text-up h2 {
+    font-size: 30px;
+}
+
+.text-up p {
+    font-size: 16px;
+}
+
+
+
+.form .text-up {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 50px;
+    color: black;
+}
+
+.input-box {
+    height: 50px;
+    width: 90%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box-big {
+    height: 100px;
+    width: 90%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    background: #e8ecf4;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #babcc2;
+    font-size: 16px;
+    text-indent: 20px;
+}
+
+.input-box-big .input {
+    width: 100%;
+    height: 100%;
+    background: #e8ecf4;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #babcc2;
+    font-size: 16px;
+    text-indent: 20px;
+    padding-top: 10px;
+    resize: none;
+}
+
+
+
+.container-footer {
+    min-height: 40vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-footer svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.footer-col {
+    padding-top: 80px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h2 {
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+
+.footer-col ul li {
+    padding: 10px 0;
+}
+
+.footer-col ul li a {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+}
+
+.footer-col .social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: white;
+    position: relative;
+}
+
+.footer-col.contact-info ul li {
+    margin-bottom: -10px;
 }
